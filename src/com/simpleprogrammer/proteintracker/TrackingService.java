@@ -30,7 +30,7 @@ public class TrackingService {
 
 	public void setGoal(int value) throws InvalidGoalExeption {
 		if (value < 0)
-			throw new InvalidGoalExeption();
+			throw new InvalidGoalExeption("Goal was less that zero!");
 			goal = value;
 	}
 
